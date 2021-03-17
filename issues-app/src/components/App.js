@@ -1,13 +1,13 @@
 import React from "react";
 import "../App.css";
-import IssueList from "./components/IssueList";
+import IssueList from "./IssueList";
 
 const issues = [
   {
     title: "My first issue",
     id: 6,
     timeCreated: "5 hours ago",
-    userNames: "noavrd",
+    userNames: "shira",
     Tags: "",
     numOfComments: 2,
   },
@@ -15,7 +15,7 @@ const issues = [
     title: "How to add an HTML tag",
     id: 5,
     timeCreated: "21 hours ago",
-    userNames: "inbarsh",
+    userNames: "meirovitz",
     Tags: "issue: bug report",
     numOfComments: 0,
   },
@@ -54,7 +54,7 @@ const issues = [
 ];
 
 function App() {
-  return <IssueList issue={issues} />;
+  return <IssueList issues={issues} />;
 }
 
 export default App;

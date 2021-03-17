@@ -7,7 +7,7 @@ export class IssueList extends Component {
       <div>
         {this.props.issues.map((issues, i) => (
           <Issue
-            key={`Issue-${i}`}
+            key={`Issue${i}`}
             title={issues.title}
             id={issues.id}
             timeCreated={issues.timeCreated}

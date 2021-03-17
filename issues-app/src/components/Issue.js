@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import commentPicture from "./comment.png";
-import mark from "./problem.jpg";
+import comment from "./comment.png";
+import problem from "./problem.jpg";
 
 export default class IssueCard extends Component {
   render() {
     return (
       <div className="issue">
         <h1>
-          <img className="mark" src={mark} alt="mark"></img>
+          <img className="problem" src={problem} alt="problem" style={{width:"40px"}}></img>
           {this.props.title}
           <span
             className={
@@ -31,7 +31,7 @@ export default class IssueCard extends Component {
         </span>
         <span className="commentImg">
           {this.props.numOfComments !== 0 ? (
-            <img className="comments" src={commentPicture} alt="comment"></img>
+            <img className="comment" src={comment} alt="comment" style={{width:"40px"}}></img>
           ) : (
             ""
           )}
