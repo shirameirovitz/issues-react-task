@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import commentPicture from "../pictures/comment.png";
-import mark from "../pictures/mark.jpg";
+import commentPicture from "../comment.png";
+import mark from "../problem.jpg";
 
 export default class IssueCard extends Component {
   render() {
